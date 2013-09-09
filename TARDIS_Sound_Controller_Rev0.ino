@@ -104,8 +104,8 @@ void setup()
   }
   
   // Begin Timer interrupt for Accelerometer checks
-  initialize(20000);
-  attachInterrupt(CheckAccelData());
+  Timer1.initialize();
+  Timer1.attachInterrupt(CheckAccelData);
   
   // All systems check out, let's tell the user
   putstring_nl("All systems go, TARDIS is ready for flight!");
